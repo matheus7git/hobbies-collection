@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+% extends 'base.html' %}
 
 {% block content %}
 
@@ -23,6 +23,7 @@
                 {{ livro['titulo'] }} por {{ livro['autor'] }}
                 <a href="/delete/{{ livro['id'] }}"><i class="fa-regular fa-trash-can"></i></a>
                 <a href="/update/{{ livro['id'] }}"><i class="fa-regular fa-pen-to-square"></i></a>
+            </li>    
         {% endfor %}
     </ul>
 
